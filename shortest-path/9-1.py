@@ -10,7 +10,7 @@ n, m = map(int, input().split())  # 노드, 간선
 start = int(input())
 graph = [[] for i in range(n + 1)]  # 각 노드에 연결되어 있는 노드에 대한 정보를 담는 리스트
 visited = [False] * (n + 1)  # 방문 테이블
-distance = [INF] * (n + 1)  # 최단 거리 테이블
+distance = [INF] * (n + 1)  # 최단 거리 테이블 
 
 for _ in range(m):
     a, b, c = map(int, input().split())  # a노드에서 b노드로 가는 비용이 c
