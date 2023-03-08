@@ -7,7 +7,7 @@ import heapq  # PriorityQueue 통상적으로 빠르게 동작
 import sys
 
 input = sys.stdin.readline
-INF = int(1e9) 
+INF = int(1e9)
 
 n, m = map(int, input().split())
 start = int(input())
