@@ -26,9 +26,9 @@ def dijkstra(start):
         dist, now = heapq.heappop(q)
         if distance[now] < dist:  # 이미 처리된 적이 있는 노드 무시
             continue
+        # 현재 노드의 인접 노드 확인
         for i in graph[now]:
             cost = dist + i[1]
-            # 현재 노드의 인접 노드 확인
             if cost < distance[i[0]]:
                 distance[i[0]] = cost
                 heapq.heappush(q, (cost, i[0]))
