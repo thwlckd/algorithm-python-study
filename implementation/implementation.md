@@ -16,3 +16,8 @@
 > 1초에 20,000,000번의 연산을 수행하면 안정권
 >> N = 1,000,000일때 NlogN = 20,000,000
 >>> O(NlogN) 알고리즘 사용
+```python
+import sys
+input = sys.stdin.readline  
+# 일반적으로 input()보다 빠른 입력 장치, 입력 데이터가 많을 때 사용
+```
