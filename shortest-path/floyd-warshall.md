@@ -2,7 +2,8 @@
 모든 지점에서 다른 모든 지점까지의 최단 경로를 모두 구하는 알고리즘
 
 ## 구현
-D<sub>ij</sub> = min(D<sub>ik</sub>, D<sub>ik</sub> + D<sub>kj</sub>)
+DP를 이용하여 방문하는 모든 노드에 대해 최단 거리 테이블을 갱신
+* D<sub>ij</sub> = min(D<sub>ik</sub>, D<sub>ik</sub> + D<sub>kj</sub>)
 ```python
 for k in range(1, n + 1):
     for i in range(1, n + 1):
