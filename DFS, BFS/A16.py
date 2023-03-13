@@ -18,7 +18,7 @@ dy = [0, 1, 0, -1]
 
 result = 0
 
-# DES를 이용해 각 바이러스가 사방으로 퍼지도록 하기
+# DFS를 이용해 각 바이러스가 사방으로 퍼지도록 하기
 def virus(x, y):
     for i in range(4):
         nx = x + dx[i]
